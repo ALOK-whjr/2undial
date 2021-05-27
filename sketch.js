@@ -36,7 +36,7 @@ function draw(){
 }
 
 async function getBg(){
-	Time = await fetch ("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+	Time = await fetch ("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
 	Json = await Time.json();
 	var hr = Json.datetime.slice(11,13);
 	var background;
